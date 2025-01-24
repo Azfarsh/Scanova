@@ -110,7 +110,7 @@ The **AI-powered personal assistant** provides:
 
 ---
 
-## 🚀 **Features and Benefits**
+## 🚀 **Features **
 
 ### **Core Features**
 1. **Smart Screening Services**:
@@ -148,17 +148,13 @@ The **AI-powered personal assistant** provides:
 1. **AI-Powered Diagnostic Tools**:
    - Expansion to include early detection of neurological and cardiovascular diseases.
 
-2. **Multilingual Support**:
-   - Support for regional languages to cater to a global audience.
 
-3. **Wearable Device Integration**:
+2. **Wearable Device Integration**:
    - Real-time health monitoring through IoT and wearables.
 
-4. **Telemedicine**:
+3. **Telemedicine**:
    - Virtual consultations and prescriptions by healthcare professionals.
 
-5. **Global Outreach**:
-   - Collaborations with international healthcare organizations.
 
 ---
 
@@ -169,7 +165,7 @@ The **AI-powered personal assistant** provides:
 
 ---
 
-## 📞 **Contact Us**
+## 📞 **9321594151**
 
 For queries, feedback, or support, reach out to us via:  
 - **Email**: [(azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
