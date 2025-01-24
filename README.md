@@ -35,7 +35,7 @@ Scanova connects users with specialized doctors based on their health conditions
 
 ### Doctor Profiles and Connections 1
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4345a2fe-78b5-4874-99f5-7e98afb18381" alt="Doctors 1" width="60%">
+  <img src="https://github.com/user-attachments/assets/7e2b90e9-ceed-4fa3-b1e7-a5a399380e18" alt="Doctors 1" width="60%">
 </p>
 
 ### Doctor Profiles and Connections 2
@@ -50,7 +50,7 @@ Scanova provides an extensive range of **smart screening services** to detect li
 
 ### Smart Screening Services 1
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/89ee2e1f-8da4-473e-80fe-d07ba6792065" alt="Services 1" width="60%">
+  <img src="https://github.com/user-attachments/assets/8c13d5cc-856b-4a89-980a-8cab4e160f28" alt="Services 1" width="60%">
 </p>
 
 ### Smart Screening Services 2
