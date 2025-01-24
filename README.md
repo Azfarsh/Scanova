@@ -4,7 +4,7 @@
 
 ---
 
----
+
 
 ## 🏠 **Homepage**
 The homepage of Scanova is designed with simplicity and user-friendliness in mind. It allows users to easily navigate through all features, making healthcare management efficient and accessible.  
