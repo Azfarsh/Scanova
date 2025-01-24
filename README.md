@@ -20,7 +20,7 @@ The dashboard provides users with real-time updates, personalized health insight
 
 ### Dashboard Overview 1
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8d86cd9f-7334-4c48-9052-9145b85de6dc" alt="Dashboard 1" width="60%">
+  <img src="https://github.com/user-attachments/assets/89ee2e1f-8da4-473e-80fe-d07ba6792065" alt="Services 1" width="60%">
 </p>
 
 ### Dashboard Overview 2
