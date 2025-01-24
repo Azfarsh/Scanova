@@ -4,18 +4,6 @@
 
 ---
 
-## 🔗 **Quick Links**
-- [Homepage](#homepage)
-- [Dashboard](#dashboard)
-- [Doctors](#doctors)
-- [Services](#services)
-- [Medical Records](#medical-records)
-- [Personal Assistant](#personal-assistant)
-- [Features and Benefits](#features-and-benefits)
-- [Future Scope](#future-scope)
-- [Contributors](#contributors)
-- [Contact Us](#contact-us)
-
 ---
 
 ## 🏠 **Homepage**
