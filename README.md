@@ -168,7 +168,7 @@ The **AI-powered personal assistant** provides:
 ## 📞 **9321594151**
 
 For queries, feedback, or support, reach out to us via:  
-- **Email**: [(azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
+- **Email**: [azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
 
 
 ---
