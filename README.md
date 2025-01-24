@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/e7d2e6c4-1944-46b2-a833-da1c13e53a53" alt="LOGO" width="120"> **Scanova**
+# <img src="https://github.com/user-attachments/assets/e7d2e6c4-1944-46b2-a833-da1c13e53a53" alt="LOGO" width="120"> ***Scanova***
 
 **Scanova** is an all-in-one **smart healthcare platform** designed to provide cost-effective, efficient, and accessible medical screening and personalized healthcare solutions. By leveraging **advanced AI technologies** and modern development frameworks, Scanova simplifies traditional healthcare processes and connects users with medical services regardless of location.
 
@@ -155,7 +155,7 @@ The **AI-powered personal assistant** provides:
 ## 📞 **Contact Us**
 
 For queries, feedback, or support, reach out to us via:  
-- **Email**: [your-email@example.com](azfarshaikh780@gmail.com)  
+- **Email**: [y(azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
 
 
 ---
