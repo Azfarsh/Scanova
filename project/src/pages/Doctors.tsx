@@ -7,101 +7,101 @@ function Doctors() {
 
   const doctorCategories = [
     {
-      specialty: "Cardiologists",
-      description: "Heart and cardiovascular system specialists",
-      doctors: [
-        {
-          name: "Dr. Michael Chen",
-          qualification: "MD, FACC",
-          experience: "15 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.9,
-          specialization: "Interventional Cardiology"
-        },
-        {
-          name: "Dr. Sarah Johnson",
-          qualification: "MD, PhD",
-          experience: "12 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.8,
-          specialization: "Nuclear Cardiology"
-        },
-        {
-          name: "Dr. Robert Kim",
-          qualification: "MD, FACC",
-          experience: "18 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.7,
-          specialization: "Pediatric Cardiology"
-        },
-        {
-          name: "Dr. Laura Martinez",
-          qualification: "MD, FACC",
-          experience: "10 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.9,
-          specialization: "Electrophysiology"
-        }
-      ]
-    },
-    {
-      specialty: "Neurologists",
-      description: "Brain, spine, and nervous system specialists",
-      doctors: [
-        {
-          name: "Dr. David Wilson",
-          qualification: "MD, FAAN",
-          experience: "18 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.9,
-          specialization: "Multiple Sclerosis"
-        },
-        {
-          name: "Dr. Emily Brown",
-          qualification: "MD, PhD",
-          experience: "14 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.7,
-          specialization: "Epilepsy"
-        },
-        {
-          name: "Dr. James Park",
-          qualification: "MD, FAAN",
-          experience: "16 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.8,
-          specialization: "Movement Disorders"
-        }
-      ]
-    },
-    {
-      specialty: "Oncologists",
-      description: "Cancer treatment specialists",
-      doctors: [
-        {
-          name: "Dr. Robert Lee",
-          qualification: "MD, FASCO",
-          experience: "20 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.9,
-          specialization: "Medical Oncology"
-        },
-        {
-          name: "Dr. Maria Rodriguez",
-          qualification: "MD, FASCO",
-          experience: "15 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.8,
-          specialization: "Radiation Oncology"
-        },
-        {
-          name: "Dr. Steven Chang",
-          qualification: "MD, FASCO",
-          experience: "17 years experience",
-          image: "/api/placeholder/200/200",
-          rating: 4.9,
-          specialization: "Surgical Oncology"
-        }
+        specialty: "Cardiologists",
+        description: "Specialists in the heart and cardiovascular system",
+        doctors: [
+          {
+            name: "Dr. Ashok Seth",
+            qualification: "MD, MBBS, DM, MRCP",
+            experience: "38+ years of experience",
+            image: "images/Dr.-Ashok-Seth-360x351.jpg.webp",
+            rating: 4.9,
+            specialization: "Interventional Cardiology"
+          },
+          {
+            name: "Dr. T S Kler",
+            qualification: "MD, FRCP, DM",
+            experience: "30 years of experience",
+            image: "images/Dr.T-S-Kler.webp",
+            rating: 4.8,
+            specialization: "Interventional Cardiology"
+          },
+          {
+            name: "Dr. Aparna Jaswal",
+            qualification: "MD, MBBS, DNB",
+            experience: "25+ years of experience",
+            image: "images/dr-aparna-jaswal-cardiologist-india.webp",
+            rating: 4.7,
+            specialization: "Interventional Cardiology"
+          },
+          {
+            name: "Dr. Nidhi Rawal",
+            qualification: "MD, FNB, MBBS",
+            experience: "10 years of experience",
+            image: "images/Dr-Nidhi-Rawal.jpg.webp",
+            rating: 4.9,
+            specialization: "Pediatric Cardiology"
+          }
+        ]
+      },
+      {
+        specialty: "Neurologists",
+        description: "Specialists in the brain, spine, and nervous system",
+        doctors: [
+          {
+            name: "Dr. Mohit Bhatt",
+            qualification: "MD, MBBS",
+            experience: "35+ years of experience",
+            image: "images/dr.-mohit-bhatt.webp",
+            rating: 4.9,
+            specialization: "General Neurology"
+          },
+          {
+            name: "Dr. Sandeep Vaishya",
+            qualification: "MD, MCh, MS",
+            experience: "34+ years of experience",
+            image: "images/dr.-sandeep-vaishya.webp",
+            rating: 4.7,
+            specialization: "Spine Surgery"
+          },
+          {
+            name: "Dr. P K Sachdeva",
+            qualification: "MD, MBBS, MS, MCh",
+            experience: "33 years of experience",
+            image: "images/dr-p-k-sachdeva-neurosurgeon.webp",
+            rating: 4.8,
+            specialization: "Neurosurgery, Spine Surgery"
+          }
+        ]
+      },
+      {
+        specialty: "Oncologists",
+        description: "Specialists in cancer treatment",
+        doctors: [
+          {
+            name: "Dr. Kamran Khan",
+            qualification: "MBBS, MS, Research Fellowship - Thoracic Oncology",
+            experience: "18 years of experience",
+            image: "images/Dr-Kamran-Khan.webp",
+            rating: 4.9,
+            specialization: "Surgical Oncology"
+          },
+          {
+            name: "Dr. Anil Kamath",
+            qualification: "MD, MBBS, FRCP",
+            experience: "18 years of experience",
+            image: "/images/Dr-Anil-Kamath.webp",
+            rating: 4.8,
+            specialization: "Surgical Oncology"
+          },
+          {
+            name: "Dr. Meenu Walia",
+            qualification: "MD, MBBS, DNB",
+            experience: "27 years of experience",
+            image: "images/Dr-Meenu-Walia.webp",
+            rating: 4.9,
+            specialization: "Medical Oncology"
+          }
       ]
     }
   ];

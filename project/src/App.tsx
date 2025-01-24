@@ -11,6 +11,7 @@ import Profile from '@/pages/Profile';
 import Services from './pages/Services';
 import Doctors from './pages/Doctors';
 import Documents from './pages/Documents';
+import HealthAssistant from './pages/Healthassisstant';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/documents" element={<Documents />} />
+          <Route path="/assisstant" element={<HealthAssistant />} />
         </Routes>
         <Footer />
         <Toaster />

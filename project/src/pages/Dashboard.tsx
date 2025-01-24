@@ -102,23 +102,59 @@ function Dashboard() {
       {/* Navbar */}
       <nav className="bg-cyan-500 text-white p-4 fixed w-full top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
           <h1 className="text-2xl font-bold">Scanova</h1>
+          
+          {/* Search Bar */}
           <div className="relative flex-1 max-w-xl mx-4">
-            <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-800" />
+            <Search className="absolute left-3 top-2.5 h-5 w-5 text-white" />
             <input
               type="text"
               placeholder="Search your medical records..."
-              className="w-full pl-10 pr-4 py-2 rounded-lg bg-white text-gray-800 border border-gray-300 focus:ring-2 focus:ring-cyan-500 focus:outline-none"
+              className="w-full pl-10 pr-4 py-2 rounded-lg bg-white text-cyan-500 placeholder-cyan-500 border border-cyan-300 focus:outline-none"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
+          
+          {/* Navbar Links */}
           <div className="flex items-center gap-4">
-          <button onClick={scrollToDocumentSection} className="bg-cyan-600 p-2 rounded-lg hover:bg-cyan-700 flex items-center gap-2">
-  <Upload className="w-5 h-5" />
-  <span className="text-white">Upload</span>
-</button>
-
+            {/* Document Upload */}
+            <button 
+              onClick={scrollToDocumentSection} 
+              className="bg-cyan-500 p-2 rounded-lg flex items-center gap-2"
+            >
+              <Upload className="w-5 h-5" />
+              <span className="text-white">Upload</span>
+            </button>
+    
+            {/* Doctors */}
+            <button 
+              onClick={() => console.log('Navigating to Doctors section')} 
+              className="bg-cyan-500 p-2 rounded-lg flex items-center gap-2"
+            >
+              <span className="text-white">Doctors</span>
+            </button>
+    
+            {/* Personal Assistant */}
+            <button 
+              onClick={() => console.log('Navigating to Personal Assistant')} 
+              className="bg-cyan-500 p-2 rounded-lg flex items-center gap-2"
+            >
+              <span className="text-white">Personal Assistant</span>
+            </button>
+    
+            {/* Profile Icon */}
+            <div 
+              className="relative w-10 h-10 rounded-full bg-white flex items-center justify-center cursor-pointer"
+              onClick={() => console.log('Opening Profile Menu')}
+            >
+              <img 
+                src="/images/prof.jpg" 
+                alt="Profile" 
+                className="w-full h-full rounded-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </nav>
@@ -189,85 +225,61 @@ function Dashboard() {
             </div>
           ))}
         </Slider>
-
-       {/* Document Storage Section */}
-       <h3 className="text-2xl font-bold mb-6 text-gray-800" ref={documentSectionRef}>
-  Document Storage
-</h3>
-<div className="bg-white p-6 rounded-xl shadow-sm">
-  <p className="text-gray-600 mb-4">
-    Upload and manage your medical documents securely.
-  </p>
-  <div className="flex flex-col gap-4">
-    {/* Removed image and mic icons, kept their input types */}
-    
-    <div className="flex items-center gap-4">
-      <Upload className="w-6 h-6 text-cyan-500" />
-      <input type="file" accept=".pdf,.doc,.docx" className="flex-1" />
-    </div>
-   
-    <button className="bg-cyan-600 px-4 py-2 rounded-lg text-white hover:bg-cyan-500 w-full">
-      Upload Files
-    </button>
-  </div>
-</div>
-
       </main>
 
-  {/* Chatbot Sidebar */}
-{isChatbotVisible && (
-  <div className="fixed right-4 bottom-4 z-50 w-96">
-    <div className="bg-white rounded-lg shadow-xl">
-      <div className="bg-cyan-400 p-4 rounded-t-lg text-white flex justify-between items-center">
-        <h3 className="font-semibold">Scanova AI Assistant</h3>
-        <button
-          onClick={() => setIsChatbotVisible(false)}
-          className="text-white font-bold"
-        >
-          ✕
-        </button>
-      </div>
-      <div className="h-96 p-4 overflow-y-auto bg-gray-200">
-        <div className="bg-white p-3 rounded-lg mb-4">
-          Hello! How can I assist you today?
+      {/* Chatbot Sidebar */}
+      {isChatbotVisible && (
+        <div className="fixed right-4 bottom-4 z-50 w-96">
+          <div className="bg-white rounded-lg shadow-xl">
+            <div className="bg-cyan-400 p-4 rounded-t-lg text-white flex justify-between items-center">
+              <h3 className="font-semibold">Scanova AI Assistant</h3>
+              <button
+                onClick={() => setIsChatbotVisible(false)}
+                className="text-white font-bold"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="h-96 p-4 overflow-y-auto bg-gray-200">
+              <div className="bg-white p-3 rounded-lg mb-4">
+                Hello! How can I assist you today?
+              </div>
+            </div>
+            <div className="p-4 border-t">
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Type your message..."
+                  className="flex-1 border rounded-lg px-3 py-2 focus:outline-none bg-white text-black"
+                />
+                <button className="bg-cyan-500 text-white p-2 rounded-lg">
+                  <Send />
+                </button>
+              </div>
+              <div className="mt-4 flex items-center gap-3">
+                <label htmlFor="voiceUpload" className="cursor-pointer">
+                  <Mic className="w-6 h-6 text-cyan-500" />
+                </label>
+                <input
+                  type="file"
+                  id="voiceUpload"
+                  className="hidden"
+                  accept="audio/*"
+                />
+                <label htmlFor="imageUpload" className="cursor-pointer">
+                  <Image className="w-6 h-6 text-cyan-500" />
+                </label>
+                <input
+                  type="file"
+                  id="imageUpload"
+                  className="hidden"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="p-4 border-t">
-        <div className="flex gap-2">
-          <input
-            type="text"
-            placeholder="Type your message..."
-            className="flex-1 border rounded-lg px-3 py-2 focus:outline-none bg-white text-black"
-          />
-          <button className="bg-cyan-500 text-white p-2 rounded-lg">
-            <Send />
-          </button>
-        </div>
-        <div className="mt-4 flex items-center gap-3">
-          <label htmlFor="voiceUpload" className="cursor-pointer">
-            <Mic className="w-6 h-6 text-cyan-500" />
-          </label>
-          <input
-            type="file"
-            id="voiceUpload"
-            className="hidden"
-            accept="audio/*"
-          />
-          <label htmlFor="imageUpload" className="cursor-pointer">
-            <Image className="w-6 h-6 text-cyan-500" />
-          </label>
-          <input
-            type="file"
-            id="imageUpload"
-            className="hidden"
-            accept="image/*"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
+      )}
     </div>
   );
 }
