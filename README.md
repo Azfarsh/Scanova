@@ -5,7 +5,7 @@
 
 # Scope and Benefits :
 
-#1-Early Disease Detection:
+*1-Early Disease Detection:*
 
 
 Integrates voice analysis and image scanning to detect diseases like cancer, tuberculosis, pneumonia, and more.
