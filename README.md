@@ -155,7 +155,7 @@ The **AI-powered personal assistant** provides:
 ## 📞 **Contact Us**
 
 For queries, feedback, or support, reach out to us via:  
-- **Email**: [y(azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
+- **Email**: [(azfarshaikh780@gmail.com](azfarshaikh780@gmail.com)  
 
 
 ---
