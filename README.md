@@ -1,4 +1,4 @@
-# Global healthcare systems struggle with delayed disease detection, fragmented data, poor interoperability, and limited access to advanced diagnostics. These issues hinder effective care and contribute to poor patient outcomes.
+*Global healthcare systems struggle with delayed disease detection, fragmented data, poor interoperability, and limited access to advanced diagnostics. These issues hinder effective care and contribute to poor patient outcomes.*
 
 
 
