@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { UserPlus, Star, Search } from 'lucide-react';
+import { Link, Search, Star } from 'lucide-react';
 import { Input } from "@/components/ui/input";
 
 function Doctors() {
@@ -16,7 +16,8 @@ function Doctors() {
             experience: "38+ years of experience",
             image: "images/Dr.-Ashok-Seth-360x351.jpg.webp",
             rating: 4.9,
-            specialization: "Interventional Cardiology"
+            specialization: "Interventional Cardiology",
+            url: "https://g.co/kgs/fsRA4i1"
           },
           {
             name: "Dr. T S Kler",
@@ -24,7 +25,8 @@ function Doctors() {
             experience: "30 years of experience",
             image: "images/Dr.T-S-Kler.webp",
             rating: 4.8,
-            specialization: "Interventional Cardiology"
+            specialization: "Interventional Cardiology",
+            url: "https://g.co/kgs/4YTRu8D"
           },
           {
             name: "Dr. Aparna Jaswal",
@@ -32,7 +34,8 @@ function Doctors() {
             experience: "25+ years of experience",
             image: "images/dr-aparna-jaswal-cardiologist-india.webp",
             rating: 4.7,
-            specialization: "Interventional Cardiology"
+            specialization: "Interventional Cardiology",
+            url: "https://g.co/kgs/Wh52K49"
           },
           {
             name: "Dr. Nidhi Rawal",
@@ -40,7 +43,8 @@ function Doctors() {
             experience: "10 years of experience",
             image: "images/Dr-Nidhi-Rawal.jpg.webp",
             rating: 4.9,
-            specialization: "Pediatric Cardiology"
+            specialization: "Pediatric Cardiology",
+            url: "https://g.co/kgs/tvomWYT"
           }
         ]
       },
@@ -54,7 +58,8 @@ function Doctors() {
             experience: "35+ years of experience",
             image: "images/dr.-mohit-bhatt.webp",
             rating: 4.9,
-            specialization: "General Neurology"
+            specialization: "General Neurology",
+            url: "https://g.co/kgs/TJQXQFC"
           },
           {
             name: "Dr. Sandeep Vaishya",
@@ -62,7 +67,8 @@ function Doctors() {
             experience: "34+ years of experience",
             image: "images/dr.-sandeep-vaishya.webp",
             rating: 4.7,
-            specialization: "Spine Surgery"
+            specialization: "Spine Surgery",
+            url: "https://g.co/kgs/vNFVY3r"
           },
           {
             name: "Dr. P K Sachdeva",
@@ -70,7 +76,8 @@ function Doctors() {
             experience: "33 years of experience",
             image: "images/dr-p-k-sachdeva-neurosurgeon.webp",
             rating: 4.8,
-            specialization: "Neurosurgery, Spine Surgery"
+            specialization: "Neurosurgery, Spine Surgery",
+            url: "https://g.co/kgs/H68jSF3"
           }
         ]
       },
@@ -84,7 +91,8 @@ function Doctors() {
             experience: "18 years of experience",
             image: "images/Dr-Kamran-Khan.webp",
             rating: 4.9,
-            specialization: "Surgical Oncology"
+            specialization: "Surgical Oncology",
+            url: "https://g.co/kgs/X35pud4"
           },
           {
             name: "Dr. Anil Kamath",
@@ -92,7 +100,8 @@ function Doctors() {
             experience: "18 years of experience",
             image: "/images/Dr-Anil-Kamath.webp",
             rating: 4.8,
-            specialization: "Surgical Oncology"
+            specialization: "Surgical Oncology",
+            url: "https://g.co/kgs/DTtVQ4z"
           },
           {
             name: "Dr. Meenu Walia",
@@ -100,7 +109,8 @@ function Doctors() {
             experience: "27 years of experience",
             image: "images/Dr-Meenu-Walia.webp",
             rating: 4.9,
-            specialization: "Medical Oncology"
+            specialization: "Medical Oncology",
+            url: "https://g.co/kgs/yhXtJqM"
           }
       ]
     }
@@ -174,10 +184,15 @@ function Doctors() {
                           </div>
                         </div>
                       </div>
-                      <button className="w-full bg-cyan-600 text-white py-2.5 rounded-lg hover:bg-cyan-700 flex items-center justify-center gap-2 transition-colors">
-                        <UserPlus className="w-4 h-4" />
-                        Schedule Consultation
-                      </button>
+                      <a 
+                        href={doctor.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-cyan-600 text-white py-2.5 rounded-lg hover:bg-cyan-700 flex items-center justify-center gap-2 transition-colors"
+                      >
+                        <Link className="w-4 h-4" />
+                        Connect to Doctor
+                      </a>
                     </div>
                   ))}
                 </div>

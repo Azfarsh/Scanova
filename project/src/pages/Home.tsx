@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Brain, Settings as Lungs, Microscope, Bot, ArrowRight, Shield, Activity } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   const services = [
     {
       icon: <Lungs className="h-10 w-10 text-cyan-500" />,
@@ -43,18 +50,28 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-full">
+    <div className={`flex flex-col min-h-screen w-full opacity-0 ${isLoaded ? 'animate-fadeIn opacity-100' : ''}`}
+         style={{
+           animation: isLoaded ? 'fadeIn 1s ease-in forwards' : 'none',
+         }}>
       {/* Hero Section */}
       <section className="relative h-[45rem] w-[95rem] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
+        <div className={`absolute inset-0 transform ${isLoaded ? 'animate-scaleIn' : 'scale-110'}`}
+             style={{
+               animation: isLoaded ? 'scaleIn 1.5s ease-out forwards' : 'none',
+             }}>
           <img
             src="/images/hom.jpg"
             alt="Medical Technology"
-            className="w-full h-full object-cover animate-fade-in"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-cyan-700/50 to-cyan-700/50" />
         </div>
-        <div className="relative w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-slide-up">
+        <div className={`relative w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center transform ${isLoaded ? 'animate-slideUp' : 'translate-y-10'}`}
+             style={{
+               animation: isLoaded ? 'slideUp 1s ease-out forwards' : 'none',
+               animationDelay: '0.5s',
+             }}>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Advanced Medical Screening
             <br />
@@ -64,7 +81,11 @@ const Home = () => {
             Early detection and prevention through cutting-edge artificial intelligence technology.
             Get accurate medical screening results within minutes.
           </p>
-          <div className="flex justify-center gap-3">
+          <div className={`flex justify-center gap-3 transform ${isLoaded ? 'animate-fadeInUp' : 'translate-y-10 opacity-0'}`}
+               style={{
+                 animation: isLoaded ? 'fadeInUp 1s ease-out forwards' : 'none',
+                 animationDelay: '0.8s',
+               }}>
             <Button
               asChild
               size="lg"
@@ -87,9 +108,13 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="w-full py-16 bg-gradient-to-b from-cyan-50 to-white animate-fade-in">
+      <section className="w-full py-16 bg-gradient-to-b from-cyan-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className={`text-center mb-10 transform ${isLoaded ? 'animate-fadeInUp' : 'translate-y-10 opacity-0'}`}
+               style={{
+                 animation: isLoaded ? 'fadeInUp 1s ease-out forwards' : 'none',
+                 animationDelay: '1s',
+               }}>
             <h2 className="text-3xl font-bold text-cyan-900 mb-3">Our Services</h2>
             <p className="text-lg text-cyan-700 max-w-3xl mx-auto">
               Comprehensive medical screening services using state-of-the-art AI technology for early detection and prevention.
@@ -101,6 +126,12 @@ const Home = () => {
               <div
                 key={index}
                 className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                style={{
+                  opacity: 0,
+                  transform: 'translateY(20px)',
+                  animation: isLoaded ? 'fadeInUp 0.8s ease-out forwards' : 'none',
+                  animationDelay: `${1.2 + index * 0.1}s`,
+                }}
               >
                 <div className="p-6">
                   <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300">
@@ -136,7 +167,11 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-12 bg-gradient-to-r from-cyan-600 to-cyan-400 animate-slide-up">
+      <section className={`w-full py-12 bg-gradient-to-r from-cyan-600 to-cyan-400 transform ${isLoaded ? 'animate-fadeInUp' : 'translate-y-10 opacity-0'}`}
+               style={{
+                 animation: isLoaded ? 'fadeInUp 1s ease-out forwards' : 'none',
+                 animationDelay: '1.8s',
+               }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Take Control of Your Health?
@@ -156,6 +191,50 @@ const Home = () => {
           </Button>
         </div>
       </section>
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          @keyframes scaleIn {
+            from {
+              transform: scale(1.1);
+            }
+            to {
+              transform: scale(1);
+            }
+          }
+
+          @keyframes slideUp {
+            from {
+              transform: translateY(40px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+
+          @keyframes fadeInUp {
+            from {
+              transform: translateY(20px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
